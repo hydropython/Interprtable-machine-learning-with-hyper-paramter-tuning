@@ -1,0 +1,6 @@
+In this study, we first aim to evaluate the applicability of regressors Random Forest (RF), Gradient Booting (GB), and Decision Tree (DT), K Nearest Neighbor (kNN), and XGBoost architectures to predict daily lake evaporation of five reservoirs in the Awash River basin, Ethiopia. The best performing models, Gradient Boosting and XGBoost, are then explained through an explanatory framework using daily climate datasets. 
+Description of the modeling framework :
+1.	Raw data processing: To improve the performance of models, 70% of the dataset is assigned to the train dimension after being divided into validation, and test sets.
+2.	Model construction: For Metehara, Melkasa, and Dubti stations, trained five tree MLAs using 16, 11, and 6 features respectively.
+3.	Hyperparameter tuning: With a given set of search spaces, a random search method is used to optimize the hyperparameters. The information about the best performance hyperparameter is returned to the original model, and the test set is used to evaluate the model performance. The performance metrics like MAE, MSE, RMSE, NSE, KGE, and RRMSE are then computed.
+4.	Interpretability and model visualization: In this phase, SHAP was used to analyze the GB and XGBoost models that performed the best globally and locally.
